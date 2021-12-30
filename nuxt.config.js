@@ -4,6 +4,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - regions_',
@@ -72,5 +73,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    transpile: [/^vue2-google-maps($|\/)/],
+    //vendor: ["vue2-google-maps"]
+  },
+  plugins: [
+    {src: "~/plugins/vue2-google-maps.js"}
+  ]
 }
