@@ -1,3 +1,4 @@
+<!--
 <template>
   <v-flex xs4>
     <v-card>
@@ -183,3 +184,4 @@
     height: 50vw;
   }
 </style>
+-->
